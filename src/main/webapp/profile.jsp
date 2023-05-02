@@ -11,8 +11,10 @@
     <title>Profile</title>
 </head>
 <body>
-<h1>Profile</h1>
-<h3>Welcome! Below are your login credentials: </h3>
+<%@include file="head.jsp"%>
+<%@include file="navbar.jsp"%>
+
+<p>Below are your login credentials: </p>
 <p>Username: <%=request.getParameter("username")%></p>
 <p>Password: <%=request.getParameter("password")%></p>
 </body>
