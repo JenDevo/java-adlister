@@ -11,8 +11,8 @@
     <title>Profile</title>
 </head>
 <body>
-<%@include file="head.jsp"%>
-<%@include file="navbar.jsp"%>
+<%@include file="partials/head.jsp"%>
+<%@include file="partials/navbar.jsp"%>
 
 <p>Below are your login credentials: </p>
 <p>Username: <%=request.getParameter("username")%></p>

@@ -12,8 +12,8 @@
     <title>Login</title>
 </head>
 <body>
-<%@include file="head.jsp"%>
-<%@include file="navbar.jsp"%>
+<%@include file="partials/head.jsp"%>
+<%@include file="partials/navbar.jsp"%>
 
     <form method="POST" action="login.jsp" class="mt-2">
         Username: <input type="text" name ="username">
