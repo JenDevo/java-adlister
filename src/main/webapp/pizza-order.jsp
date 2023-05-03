@@ -18,40 +18,40 @@
 <h4>Pizza Selection:</h4>
 
 <br>
-<form action="pizza-order.jsp" method="POST">
+<form action="/pizza-order" method="POST">
 <label for="crust">Crust:</label>
 <select name="crust" id="crust">
     <option value="">--Please choose an option--</option>
-    <option value="handTossed">Hand Tossed</option>
-    <option value="handmadePan">Handmade Pan</option>
-    <option value="thinCrust">Crunchy Thin Crust</option>
-    <option value="brooklyn">Brooklyn Style</option>
-    <option value="glutenFree">Gluten Free Crust</option>
+    <option value="Hand Tossed">Hand Tossed</option>
+    <option value="Handmade Pan">Handmade Pan</option>
+    <option value="Crunchy Thin">Crunchy Thin</option>
+    <option value="Brooklyn Style">Brooklyn Style</option>
+    <option value="Gluten Free">Gluten Free</option>
 </select>
 
 <br><br>
 <label for="sauce">Sauce:</label>
 <select name="sauce" id="sauce">
     <option value="">--Please choose an option--</option>
-    <option value="marinara">Marinara</option>
-    <option value="bbq">Honey BBQ</option>
-    <option value="garlicParmesan">Garlic Parmesan</option>
-    <option value="alfredo">Alfredo</option>
-    <option value="ranch">Ranch</option>
+    <option value="Marinara">Marinara</option>
+    <option value="Honey BBQ">Honey BBQ</option>
+    <option value="Garlic Parmesan">Garlic Parmesan</option>
+    <option value="Alfredo">Alfredo</option>
+    <option value="Ranch">Ranch</option>
 </select>
 
 <br><br>
 <label for="size">Size:</label>
 <select name="size" id="size">
     <option value="">--Please choose an option--</option>
-    <option value="alfredo">Small (10")</option>
-    <option value="medium">Medium (12")</option>
-    <option value="large">Large (14")</option>
-    <option value="x-large">X-Large (16")</option>
+    <option value="Small">Small (10")</option>
+    <option value="Medium">Medium (12")</option>
+    <option value="Large">Large (14")</option>
+    <option value="X-Large">X-Large (16")</option>
 </select>
 
     <br><br>
-    <div class="card tab-pane" id="topping" role="tabpanel" aria-labelledby="topping-tab">
+    <div class="card tab-pane" id="toppings" role="tabpanel" aria-labelledby="topping-tab">
         <div class="list-group">
             <div class="bg-primary rounded-top">
                 <p class="text-white m-2">
@@ -84,40 +84,35 @@
                             Choose Non-Meats
                         </label>
                         <label class="list-group-item">
-                            <input class="form-check-input" type="checkbox" name="toppings-non-meat"
+                            <input class="form-check-input" type="checkbox" name="toppings"
                                    value="green peppers">
                             Green Peppers
                         </label>
                         <label class="list-group-item">
-                            <input class="form-check-input" type="checkbox" name="toppings-non-meat"
+                            <input class="form-check-input" type="checkbox" name="toppings"
                                    value="mushrooms">
                             Mushrooms
                         </label>
                         <label class="list-group-item">
-                            <input class="form-check-input" type="checkbox" name="toppings-non-meat" value="onions">
+                            <input class="form-check-input" type="checkbox" name="toppings" value="onions">
                             Onions
-                        </label>
-                        <label class="list-group-item">
-                            <input class="form-check-input" type="checkbox" name="toppings-non-meat"
-                                   value="jalapeño-peppers">
-                            Jalapeño Peppers
                         </label>
                     </div>
             </div>
         </div>
     </div>
 
-    <div>
+    <div id="address">
         <label for="streetAddress">Street Address: </label>
         <input type="text" id="streetAddress" name="streetAddress"><br><br>
         <label for="city">City: </label>
-        <input type="text" id="city" name="city"><br><br>
+        <input type="text" id="city" name="streetAddress"><br><br>
         <label for="state">State: </label>
-        <input type="text" id="state" name="state"><br><br>
+        <input type="text" id="state" name="streetAddress"><br><br>
         <label for="zipcode">Zip code: </label>
-        <input type="text" id="zipcode" name="zipcode"><br><br>
+        <input type="text" id="zipcode" name="streetAddress"><br><br>
         <label for="deliveryInstructions">Delivery Instructions: </label>
-        <input type="text" id="deliveryInstructions" name="deliveryInstructions"><br><br>
+        <input type="text" id="deliveryInstructions" name="streetAddress"><br><br>
     </div>
     <input type="submit" value="Submit">
 </form>
