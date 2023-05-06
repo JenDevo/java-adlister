@@ -1,18 +1,16 @@
 import java.io.Serializable;
-import java.time.Year;
-
 
 public class Album implements Serializable {
     private long id;
     private String artist;
     private String name;
-    private Year releaseDate;
+    private int releaseDate;
     private double sales;
     private String genre;
 
     public Album(){}
 
-    public Album(long id, String artist, String name, Year releaseDate, double sales, String genre) {
+    public Album(long id, String artist, String name, int releaseDate, double sales, String genre) {
         this.id = id;
         this.artist = artist;
         this.name = name;
@@ -45,11 +43,11 @@ public class Album implements Serializable {
         this.name = name;
     }
 
-    public Year getReleaseDate() {
+    public int getReleaseDate() {
         return releaseDate;
     }
 
-    public void setReleaseDate(Year releaseDate) {
+    public void setReleaseDate(int releaseDate) {
         this.releaseDate = releaseDate;
     }
 
@@ -72,12 +70,14 @@ public class Album implements Serializable {
     @Override
     public String toString(){
         return String.format("Album{ " +
-                "id=%d, " +
-                "artist=%s, " +
-                "name=%s, " +
-                "releaseDate=%d, " +
-                "sales=%d, " +
-                "genre=%s}",
+                "id = %d, " +
+                "artist = %s, " +
+                "name = '%s', " +
+                "releaseDate = %d, " +
+                "sales = %f, " +
+                "genre = %s}",
                 id, artist, name, releaseDate, sales, genre);
     }
 }
+
+
